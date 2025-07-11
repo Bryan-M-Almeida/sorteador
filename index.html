@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PixelSorte com Tailwind</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
-    <h1 class="text-4xl text-yellow-400 font-bold">Sorteador</h1>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelSorte</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-pixel bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+  <header class="bg-white py-5">
+    <nav class="flex justify-between w-[92%] mx-auto">
+      <div class="w-16 mt-2 text-2xl mr-20">
+        <h1>PixelSorte</h1>
+      </div>
+      <div
+        class="md:static absolute bg-white md:min-h-fit  min-h-[60vh] left-0 top-[9%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:itens-center md:gap-[4vw] gap-12">
+          <li>
+            <a class="hover:text-gray-500" href="">Início</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="">Lista</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="">Sorteio</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="">Configurações</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6">
+        <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
+        <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+
+  </header>
+</body>
+
+<script src="script.js"></script>
+
 </html>
