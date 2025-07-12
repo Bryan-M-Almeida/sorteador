@@ -10,36 +10,54 @@
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
-<body class="font-pixel bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
-  <header class="bg-white py-5">
-    <nav class="flex justify-between w-[92%] mx-auto">
-      <div class="w-16 mt-2 text-2xl mr-20">
-        <h1>PixelSorte</h1>
+<body class="font-pixel bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen max-w-screen overflow-x-hidden">
+
+  <header class="bg-white w-screen">
+    <nav class="flex justify-between items-center max-w-screen-xl w-full mx-auto px-4">
+
+      <!-- Logo -->
+      <div>
+        <h1 class="md:text-xl text-l py-7 font-bold">PixelSorte</h1>
       </div>
+
+      <!-- Menu Links -->
       <div
-        class="md:static absolute bg-white md:min-h-fit  min-h-[60vh] left-0 top-[9%] md:w-auto w-full flex items-center px-5">
-        <ul class="flex md:flex-row flex-col md:itens-center md:gap-[4vw] gap-12">
-          <li>
-            <a class="hover:text-gray-500" href="">Início</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="">Lista</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="">Sorteio</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="">Configurações</a>
-          </li>
+        class="nav-links duration-500 md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-2 z-50">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-10 w-full">
+          <li><a href="#" class="hover:text-gray-500">Início</a></li>
+          <li><a href="#" class="hover:text-gray-500">Sorteio</a></li>
+          <li><a href="#" class="hover:text-gray-500">Dados</a></li>
+          <li><a href="#" class="hover:text-gray-500">Configurações</a></li>
         </ul>
       </div>
-      <div class="flex items-center gap-6">
-        <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
-        <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+
+      <!-- Ações (botões + ícone) -->
+      <div class="flex items-center gap-4">
+        <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec] hidden md:block">
+          Sign In
+        </button>
+        <ion-icon id="icon" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
       </div>
     </nav>
-
   </header>
+
+  <main>
+    <section>
+
+    </section>
+
+    <footer class="w-full bg-gradient-to-t from-white to-gray-200 text-gray-700 absolute bottom-0">
+      <div
+        class="max-w-screen-xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+        <span>Desenvolvido por Bryan</span>
+        <span>&copy; 2025 PixelSorte. </span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+      </div>
+    </footer>
+
+
+  </main>
 </body>
 
 <script src="script.js"></script>
